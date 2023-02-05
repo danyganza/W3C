@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.page_header {
+    min-height: 10vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.page_main {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+.page_footer {
+    min-height: 10vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#page_logo {
+    height: 100px;
+    width: 100px;
+}
+ .page_main >img {
+    height: 200px;
+    width: 1fr 1fr;
+ }
