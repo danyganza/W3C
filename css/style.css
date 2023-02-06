@@ -15,7 +15,7 @@ body {
     min-height: 10vh;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
 }
 
 .page_main {
@@ -23,7 +23,7 @@ body {
     display: grid;
     place-items: center;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
 }
 
 
@@ -34,7 +34,7 @@ body {
     min-height: 10vh;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
 }
 
 #page_logo {
@@ -46,12 +46,12 @@ body {
 
 #page_social {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
 }
 
 #page_contacts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
 }
 
 #page_policies {
@@ -61,6 +61,7 @@ body {
 
 h3 {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
    
 
@@ -68,18 +69,37 @@ h3 {
 
 #image {
     display: grid;
-    justify-items: center;
-    
-    width: 100%;
+    place-self: center;
     object-fit: cover;
     border-radius: 10%;
-    width: 100%;
+    width: 600px;
+    
+   
 }
 
 
 #page_section>p {
  display: grid;
+ grid-template-columns: 2fr 1fr;
  place-items: center;
  
 
+}
+
+#page_tag {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    width: 600px;
+   
+}
+
+#image_1 {
+        display: grid;
+    grid-template-columns: 1fr;
+    place-self: center;
+    object-fit: cover;
+    border-radius: 40%;
+    width: 300px;
+    height: 10%;
 }
