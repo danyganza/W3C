@@ -22,7 +22,7 @@
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
     width: 90%;
-    height: 60;
+    height: 50%;
 
 }
  img {
