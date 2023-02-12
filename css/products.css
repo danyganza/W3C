@@ -12,26 +12,28 @@
 .page_header {
     min-height: 10vh;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    margin-bottom: 30px;
 }
 
 .page_main {
     min-height: 80vh;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 90%;
     height: 50%;
+     margin-left: 70px;
 
 }
  img {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+
    align-items: center;
     object-fit: cover;
     border-radius: 10%;
-    width: 300px;
+    width: 220px;
+    height: 200px;
 
  }
 
@@ -70,7 +72,8 @@
         min-height: 10vh;
         display: grid;
         place-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-top: 20px;
     }
     
     #page_logo {
@@ -81,12 +84,12 @@
 
 #page_social {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #page_contacts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #page_policies {
