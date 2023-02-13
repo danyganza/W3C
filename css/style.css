@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: rgb(248, 248, 248);
+    
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    background-color: rgb(225, 243, 225);
 }
 
 .page_main {
@@ -24,6 +25,7 @@ body {
     place-items: center;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: rgb(250, 249, 246);
 }
 
 
@@ -35,11 +37,14 @@ body {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: rgb(225, 243, 225);
+    animation: animapage_footer 2s linear backwards infinite;
 }
 
 #page_logo {
     height: 80px;
     width: 80px;
+    
 }
 
 
@@ -73,6 +78,7 @@ h3 {
     object-fit: cover;
     border-radius: 10%;
     width: 600px;
+    animation: animateimage 2s linear forwards infinite;
 
 
 }
@@ -97,7 +103,59 @@ h3 {
     display: grid;
     place-self: center;
     object-fit: cover;
-    border-radius: 40%;
+    border-radius: 60%;
     width: 400px;
     height: 10%;
+    animation: animateimage_1 3s linear forwards infinite;
 }
+
+h3{
+    transition: all linear;
+
+ }
+ h3:active{
+    transform: scale(2.0);
+    font-display: 60px;
+ }
+
+
+
+ p {
+    transition: all ease-out;
+
+ }
+ p:hover{
+    transform: scale(1.0);
+   color: darkorange;
+ }
+
+
+
+
+
+@keyframes animateimage_1{
+        to {
+            transform: rotate(360deg) ;
+        }
+     }
+
+     @keyframes animateimage {
+        to {
+            transform: scale(.5);
+        }
+     }
+    
+    
+     @keyframes animapage_footer {
+        to {
+           transform: scale(.6);
+        }
+     }
+    
+    
+
+
+
+
+
+
